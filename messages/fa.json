@@ -1,5 +1,30 @@
 {
-  "HomePage": {
-    "title": "سلام دنیا!"
+  "Header": {
+    "logo": "بت۳۶۵",
+    "nav": {
+      "sports": "ورزش‌ها",
+      "live": "زنده",
+      "casino": "کازینو"
+    },
+    "language": "زبان"
+  },
+  "Categories": {
+    "all": "همه ورزش‌ها",
+    "football": "فوتبال",
+    "tennis": "تنیس",
+    "basketball": "بسکتبال"
+  },
+  "Matches": {
+    "title": "مسابقات زنده",
+    "vs": "در مقابل",
+    "home": "میزبان",
+    "draw": "مساوی",
+    "away": "میهمان"
+  },
+  "Footer": {
+    "about": "درباره ما",
+    "contact": "تماس",
+    "terms": "شرایط و ضوابط",
+    "privacy": "سیاست حفظ حریم خصوصی"
   }
 }

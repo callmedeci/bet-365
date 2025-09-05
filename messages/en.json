@@ -1,5 +1,30 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "Header": {
+    "logo": "Bet365",
+    "nav": {
+      "sports": "Sports",
+      "live": "Live",
+      "casino": "Casino"
+    },
+    "language": "Language"
+  },
+  "Categories": {
+    "all": "All Sports",
+    "football": "Football",
+    "tennis": "Tennis",
+    "basketball": "Basketball"
+  },
+  "Matches": {
+    "title": "Live Matches",
+    "vs": "vs",
+    "home": "Home",
+    "draw": "Draw",
+    "away": "Away"
+  },
+  "Footer": {
+    "about": "About Us",
+    "contact": "Contact",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy"
   }
 }
