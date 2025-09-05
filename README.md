@@ -22,11 +22,12 @@ npm run dev
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run lint` - Run ESLint checks
+- `npm run format` - Format code with Prettier
 
 ## Internationalization
 
 - Switch locales using the language toggle in the header
-- Edit translations in `messages/en.json` (FA already configured)
+- Edit translations in `messages/[en | fa].json`
 - Locale routing handled automatically by next-intl middleware
 
 ## Features
