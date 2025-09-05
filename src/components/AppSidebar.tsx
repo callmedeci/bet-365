@@ -19,8 +19,10 @@ function AppSidebar() {
   };
 
   return (
-    <aside className='rounded-lg border border-gray-200 bg-white p-6 shadow-sm'>
-      <h3 className='mb-4 text-lg font-semibold text-gray-900'>Categories</h3>
+    <aside className='rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-900'>
+      <h3 className='mb-4 text-lg font-semibold text-gray-900 dark:text-white'>
+        Categories
+      </h3>
       <nav className='space-y-2'>
         {categories.map((category) => (
           <button
@@ -28,8 +30,8 @@ function AppSidebar() {
             onClick={() => handleCategoryChange(category.key)}
             className={`w-full rounded-md px-4 py-3 text-left text-sm font-medium transition-colors duration-150 ${
               selectedCategory === category.key
-                ? 'border border-blue-200 bg-blue-100 text-blue-700'
-                : 'text-gray-700 hover:bg-gray-50 hover:text-gray-900'
+                ? 'border border-blue-200 bg-blue-100 text-blue-700 dark:border-blue-400 dark:bg-blue-950 dark:text-blue-300'
+                : 'text-gray-700 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white'
             }`}
           >
             {t(category.translationKey)}

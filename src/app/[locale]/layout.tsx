@@ -8,6 +8,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { ReactNode } from 'react';
 import '../globals.css';
+import DarkModeProvider from '@/components/DarkModeProvider';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     title: 'Bet365 Clone',
     description:
       'Experience a clean and responsive sports betting interface. Follow live matches, filter by sport, and enjoy a bilingual English/Persian platform.',
-    url: 'https://SHOULD_CHANGE.com',
+    url: 'https://bet-365.vercel.app',
     siteName: 'Bet365 Clone',
     locale: 'en_US',
     type: 'website',
@@ -59,17 +60,19 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
-    <html lang='en' dir={locale === 'fa' ? 'rtl' : 'ltr'}>
+    <html lang='en' dir={locale === 'fa' ? 'rtl' : 'ltr'} className=''>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
           <NextIntlClientProvider>
-            <section className='flex min-h-dvh flex-col bg-gray-50'>
-              <Header />
-              <main className='flex-1'>{children}</main>
-              <Footer />
-            </section>
+            <DarkModeProvider>
+              <section className='flex min-h-dvh flex-col bg-gray-50 dark:bg-gray-800'>
+                <Header />
+                <main className='flex-1'>{children}</main>
+                <Footer />
+              </section>
+            </DarkModeProvider>
           </NextIntlClientProvider>
         </Providers>
       </body>

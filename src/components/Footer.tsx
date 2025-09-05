@@ -12,12 +12,12 @@ async function Footer() {
   ];
 
   return (
-    <footer className='mt-12 border-t border-gray-200 bg-gray-50'>
+    <footer className='mt-12 border-t border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-900'>
       <div className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
         <div className='flex flex-col items-center justify-between md:flex-row'>
           <div className='mb-4 md:mb-0'>
             <h3 className='text-lg font-bold text-blue-600'>Bet365</h3>
-            <p className='mt-1 text-sm text-gray-600'>
+            <p className='mt-1 text-sm text-gray-600 dark:text-gray-400'>
               © 2025 Bet365. All rights reserved.
             </p>
           </div>
@@ -27,7 +27,7 @@ async function Footer() {
               <Link
                 href={`/${link.href}`}
                 key={link.href}
-                className='text-sm text-gray-600 transition-colors duration-150 hover:text-blue-600'
+                className='text-sm text-gray-600 transition-colors duration-150 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500'
               >
                 {link.label}
               </Link>
